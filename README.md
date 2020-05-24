@@ -7,6 +7,7 @@
 ## Dependencies
 Download https://github.com/Links2004/arduinoWebSockets as zip file and add this library to your Arduino Libraries by Sketch/Include Library/Add Zip...<br/>
 
+Android application: https://play.google.com/store/apps/details?id=com.p4f.esp32camai
 
 ## LICENSE
 The part contains my code is released under BSD 2-Clause License. Regarding other libraries used in this project, please follow the respective Licenses.
