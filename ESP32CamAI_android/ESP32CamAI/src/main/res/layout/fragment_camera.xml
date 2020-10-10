@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#a6dfdfdf"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.25"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/backwardMoveBtn"
+            android:layout_width="200px"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_btn_backward_off" />
+
+        <ImageButton
+            android:id="@+id/forwardMoveBtn"
+            android:layout_width="200px"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_btn_forward_off" />
+
+        <com.p4f.esp32camai.VerticalButton
+            android:id="@+id/objDetBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:background="@drawable/my_button_bg"
+            android:textColor="#ffffff"
+            android:minHeight="80dip"
+            android:text="Object Detection" />
+
+        <com.p4f.esp32camai.VerticalButton
+            android:id="@+id/objTrackBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:background="@drawable/my_button_bg"
+            android:textColor="#ffffff"
+            android:minHeight="80dip"
+            android:text="Tracking" />
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="7.5"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center|center_vertical"
+            android:gravity="center|center_vertical" />
+
+        <com.p4f.esp32camai.OverlayView
+            android:id="@+id/tracking_overlay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.25"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/rightMoveBtn"
+            android:layout_width="200px"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_btn_right_off" />
+
+        <ImageButton
+            android:id="@+id/leftMoveBtn"
+            android:layout_width="200px"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_btn_left_off" />
+
+        <com.p4f.esp32camai.VerticalButton
+            android:id="@+id/streamBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:layout_gravity="center"
+            android:background="@drawable/my_button_bg"
+            android:minHeight="80dip"
+            android:textColor="#ffffff"
+            android:text="Stream" />
+        <com.p4f.esp32camai.VerticalButton
+            android:id="@+id/ledBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:layout_gravity="center"
+            android:background="@drawable/my_button_bg"
+            android:minHeight="80dip"
+            android:textColor="#ffffff"
+            android:text="LED" />
+    </LinearLayout>
+
+</LinearLayout>
